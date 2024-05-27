@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { Client } from 'boardgame.io/react'
+import { Local } from 'boardgame.io/multiplayer'
+import { ArkhamHorror } from './Game'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const ArkhamHorrorClient = Client({
+  game: ArkhamHorror,
+  multiplayer: Local(),
+  numPlayers: 3,
+})
+
+const App = () => (
+  <div>
+    <ArkhamHorrorClient
+      playerID="0"
+    />
+  </div>
+)
 
 export default App;

@@ -1,0 +1,68 @@
+{
+  "investigatorSheets": [
+    { "name": "Investigator1" },
+    { "name": "Investigator2" },
+    { "name": "Investigator3" }
+  ],
+
+  "investigatorCards": {
+    "common": [
+      { "name": "commonItem1" },
+      { "name": "commonItem2" },
+      { "name": "commonItem3" }
+    ],
+
+    "unique": [
+      { "name": "uniqueItem1" },
+      { "name": "uniqueItem2" },
+      { "name": "uniqueItem3" }
+    ],
+
+    "skill": [
+      { "name": "skill1" },
+      { "name": "skill2" },
+      { "name": "skill3" }
+    ],
+
+    "spell": [
+      { "name": "spell1" },
+      { "name": "spell2" },
+      { "name": "spell3" }
+    ],
+
+    "ally": [
+      { "name": "ally1" },
+      { "name": "ally2" },
+      { "name": "ally3" }
+    ],
+
+    "special": [
+      { "name": "special1" },
+      { "name": "special2" },
+      { "name": "special3" }
+    ]
+  },
+
+  "ancientOneSheets": [
+      { "name": "ancientOne1" },
+      { "name": "ancientOne2" },
+      { "name": "ancientOne3" }
+  ],
+
+  "ancientOneCards": {
+    "location": {
+    },
+
+    "gate": [
+      { "name": "gate1" },
+      { "name": "gate2" },
+      { "name": "gate3" }
+    ],
+
+    "mythos": [
+      { "name": "mythos1" },
+      { "name": "mythos2" },
+      { "name": "mythos3" }
+    ]
+  }
+}
