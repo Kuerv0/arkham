@@ -45,9 +45,9 @@ export const ArkhamHorror = {
     firstMythosPhase: {
       turn: {
         order: {
-          first: () => 1,
+          first: ({ ctx }) => ((ctx.numPlayers > 1) ? 1 : 0),
           next: ({ ctx }) => undefined,
-          playOrder: ( { G, ctx} ) => ctx.playOrder.splice(ctx.numPlayers - 1).concat(ctx.playOrder), 
+          playOrder: ( { G, ctx} ) => ((ctx.numPlayers > 1) ? ctx.playOrder.splice(ctx.numPlayers - 1).concat(ctx.playOrder) : ctx.playOrder), 
         }
       },
 
@@ -66,7 +66,7 @@ export const ArkhamHorror = {
         order: {
           first: () => 0,
           next: ({ ctx }) => ((ctx.playOrderPos + 1) >= ctx.numPlayers) ? undefined : ctx.playOrderPos + 1,
-          playOrder: ( { G, ctx} ) => ctx.playOrder.splice(1).concat(ctx.playOrder), 
+          playOrder: ( { G, ctx} ) => ((ctx.numPlayers > 1) ? ctx.playOrder.splice(1).concat(ctx.playOrder) : ctx.playOrder), 
         },
       },
       //Refresh Exhausted Cards
