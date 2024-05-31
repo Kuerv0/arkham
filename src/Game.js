@@ -1,24 +1,7 @@
 import { TurnOrder } from 'boardgame.io/core'
-import { Player } from './Classes'
+import { customTurnOrder, player } from './Custom'
 
 import baseGame from './data/base-game.json'
-
-let customTurnOrder = {
-    first: () => 0,
-    next: ({ ctx }) => ((ctx.playOrderPos + 1) >= ctx.numPlayers) ? undefined : ctx.playOrderPos + 1,
-    playOrder: ( { G, ctx} ) => ctx.playOrder
-}
-
-let player = {
-  investigatorSheet: {}
-  investigatorCards: {}
-  investigatorData: {
-    stamina: 0,
-    sanity: 0,
-    money: 0,
-    delayed: false,
-  }
-}
 
 export const ArkhamHorror = {
   setup: ({ctx}) => ({
@@ -28,10 +11,7 @@ export const ArkhamHorror = {
     ancientOneCards: baseGame.ancientOneCards,
 
     players: Array(ctx.numPlayers).fill(
-      {
-        investigatorSheet: {},
-        items: {}
-      }
+      player
     ),
 
     firstPlayer: 0,

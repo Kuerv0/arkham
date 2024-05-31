@@ -1,6 +1,125 @@
 {
   "investigatorSheets": [
-    { "name": "Investigator1" },
+    {
+      "name": "Amanda Sharpe",
+      "occupation": "the Student",
+      "sanity": 5,
+      "stamina": 5,
+      "home": "Bank of Arkham",
+      "possessions": {
+        "fixed": {
+          "money": 1,
+          "clueTokens": 1
+        },
+        "random": {
+          "common": 1,
+          "unique": 1,
+          "spell": 1,
+          "skill": 3
+        }
+      },
+      "focus": 3,
+      "ability": {
+        "name": "Studious",
+        "phase": "Any Phase",
+        "description": "Whenever Amanda draws one or more cards from the Skill deck, she draws one extra card and then discards one of the cards."
+      },
+      "slider": {
+        "spSn": [1, 4],
+        "fiWi": [1, 4],
+        "loLu": [1, 4]
+      }
+    },
+
+    {
+      "name": "Ashcan Pete",
+      "occupation": "the Drifter",
+      "sanity": 4,
+      "stamina": 6,
+      "home": "River Docks",
+      "possessions": {
+        "fixed": {
+          "money": 1,
+          "clueTokens": 3,
+          "ally": ["Duke"]
+        },
+        "random": {
+          "common": 1,
+          "unique": 1,
+          "skill": 1
+        }
+      },
+      "focus": 1,
+      "ability": {
+        "name": "Scrounge",
+        "description": "When Pete draws from the Common item, Unique item, or Spell deck, he may draw from either the top or the bottom of that deck, his choice. Pete may look at the bottom card of those decks at any time."
+      },
+      "slider": {
+        "spSn": [0, 6],
+        "fiWi": [2, 5],
+        "loLu": [0, 3]
+      }
+    },
+
+    {
+      "name": "Bob Jenkins",
+      "occupation": "the Salesman",
+      "sanity": 4,
+      "stamina": 6,
+      "home": "General Store",
+      "possessions": {
+        "fixed": {
+          "money": 9
+        },
+        "random": {
+          "common": 3,
+          "unique": 2,
+          "skill": 1
+        }
+      },
+      "focus": 1,
+      "ability": {
+        "name": "Shrewd Dealer",
+        "phase": "Any Phase",
+        "description": "Whenever Bob draws one or more cards from the Common item deck, he draws one extra card and then discards one of the cards."
+      },
+      "slider": {
+        "spSn": [2, 3],
+        "fiWi": [1, 6],
+        "loLu": [0, 4]
+      }
+    },
+
+    {
+      "name": "Carolyn Fern",
+      "occupation": "the Psychologist",
+      "sanity": 6,
+      "stamina": 4,
+      "home": "Arkham Asylum",
+      "possessions": {
+        "fixed": {
+          "money": 7,
+          "clueTokens": 1
+        },
+        "random": {
+          "common": 2,
+          "unique": 2,
+          "skill": 1
+        }
+      },
+      "focus": 2,
+      "ability": {
+        "name": "",
+        "phase": "",
+        "description": ""
+      },
+      "slider": {
+        "spSn": [],
+        "fiWi": [],
+        "loLu": []
+      }
+    },
+
     { "name": "Investigator2" },
     { "name": "Investigator3" }
   ],
