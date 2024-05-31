@@ -1,11 +1,23 @@
 import { TurnOrder } from 'boardgame.io/core'
-import baseGame from './data/base-game.json'
 import { Player } from './Classes'
+
+import baseGame from './data/base-game.json'
 
 let customTurnOrder = {
     first: () => 0,
     next: ({ ctx }) => ((ctx.playOrderPos + 1) >= ctx.numPlayers) ? undefined : ctx.playOrderPos + 1,
     playOrder: ( { G, ctx} ) => ctx.playOrder
+}
+
+let player = {
+  investigatorSheet: {}
+  investigatorCards: {}
+  investigatorData: {
+    stamina: 0,
+    sanity: 0,
+    money: 0,
+    delayed: false,
+  }
 }
 
 export const ArkhamHorror = {
@@ -75,8 +87,11 @@ export const ArkhamHorror = {
         },
       },
       //Refresh Exhausted Cards
+      //for items in Investigator => set item as exhausted
       //Perform Upkeep actions [Retainer]
+      //This are special items, it's easy to ask for a roll.
       //Adjust Skills
+      //The front will make sure that the next skill thing is valid.
       next: "movementPhase",
     },
 
@@ -85,8 +100,9 @@ export const ArkhamHorror = {
         order: customTurnOrder,
       },
       //Arkham Movement
-      //OtherWorldMovement
-      //DelayedInvestigator
+      //Get points = speed
+      //OtherWorldMovement no movement points
+      //DelayedInvestigator => Stands up
       next: "arkhamEncountersPhase"
     },
 
@@ -102,6 +118,7 @@ export const ArkhamHorror = {
     otherWorldEncounters: {
       turn: {
         order: customTurnOrder,
+        //DrawEncounter card
       },
 
       next: "mythosPhase"
