@@ -1,7 +1,8 @@
 import { TurnOrder } from 'boardgame.io/core'
 import baseGame from './data/base-game.json'
+import { Player } from './Classes'
 
-let noReset = {
+let customTurnOrder = {
     first: () => 0,
     next: ({ ctx }) => ((ctx.playOrderPos + 1) >= ctx.numPlayers) ? undefined : ctx.playOrderPos + 1,
     playOrder: ( { G, ctx} ) => ctx.playOrder
@@ -14,14 +15,18 @@ export const ArkhamHorror = {
     ancientOneSheets: baseGame.ancientOneSheets,
     ancientOneCards: baseGame.ancientOneCards,
 
-    players: Array(ctx.numPlayers).fill(null),
+    players: Array(ctx.numPlayers).fill(
+      {
+        investigatorSheet: {},
+        items: {}
+      }
+    ),
 
     firstPlayer: 0,
   }),
 
   phases: {
     setup: {
-      // Determine Investigators
       turn: {
         order: TurnOrder.ONCE,
         minMoves: 1,
@@ -29,15 +34,15 @@ export const ArkhamHorror = {
       },
 
       moves: {
+        // Determine Investigators
         setupInvestigator: ( { G, playerID } ) => {
-          //G.players[playerID].push(G.investigatorSheets.pop())
-          (G.investigatorSheets.pop())
+          G.players[playerID].investigatorSheet = G.investigatorSheets.pop()
           // Receive Fixed Possessions
           // Random Possessions
+          // Finish Investigator
         }
 
       },
-      // Finish Investigator
       next: "firstMythosPhase",
       start: true,
     },
@@ -77,7 +82,7 @@ export const ArkhamHorror = {
 
     movementPhase: {
       turn: {
-        order: noReset,
+        order: customTurnOrder,
       },
       //Arkham Movement
       //OtherWorldMovement
@@ -87,7 +92,7 @@ export const ArkhamHorror = {
 
     arkhamEncountersPhase: {
       turn: {
-        order: noReset,
+        order: customTurnOrder,
       },
       //NoGate
       //Gate
@@ -96,7 +101,7 @@ export const ArkhamHorror = {
 
     otherWorldEncounters: {
       turn: {
-        order: noReset,
+        order: customTurnOrder,
       },
 
       next: "mythosPhase"
