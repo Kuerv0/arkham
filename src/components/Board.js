@@ -1,73 +1,95 @@
 export function Board( {ctx, G, moves} ){
   return(
-    <div>
+    <div className="ui celled grid">
+      <InvestigatorSheet/>
     </div>
   )
 }
 
 export function InvestigatorSheet( {ctx, G, moves} ){
   return(
-    <div className="ui card">
-      <div className="content">
-        <div className="ui header">
-          <img src="https://t4.ftcdn.net/jpg/02/29/75/83/240_F_229758328_7x8jwCwjtBMmC6rgFzLFhZoEpLobB6L8.jpg" className="ui circular image"/>
-          Carolyn Fern
-        </div>
-        <div className="meta">
-          <span className="right floated date">the Pshychologist</span>
-        </div>
-      </div>
-      <div className="extra content">
-        <div className="header">
-          Psychology
-        </div>
-        <div className="meta">
-          Upkeep: Dr. Fern may restore 1 Sanity to herself or another character on her location. She came...
-        </div>
-      </div>
+    <div className="row">
+      <div className="ui five wide column">
+        <div className="ui segment">
+          <div className="ui two column stackable grid">
+            <div className="column">
+              <img className="ui small centered circular image" src="./test.png"/>
+                <div className="ui card">
+                  <div className="content">
+                    <div className="header">Cristian es gei</div>
+                    <div className="left floated meta">Y bien gei</div>
+                  </div>
+                </div>
+            </div>
+            <div className="column">
+
+              <div className="ui stackable cards">
+                <div className="ui card">
+                  <div className="content">
+                    <i className="right floated large heartbeat icon"></i>
+                    <div className="header">Stamina</div>
+                  </div>
+                  <div className="extra content">
+                    <div className="ui two buttons">
+                      <div className="ui basic green button">+1</div>
+                      <div className="ui basic red button">-1</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="ui card">
+                  <div className="content">
+                    <i className="right floated large heartbeat icon"></i>
+                    <div className="header">Stamina</div>
+                  </div>
+                  <div className="extra content">
+                    <div className="ui two buttons">
+                      <div className="ui basic green button">+1</div>
+                      <div className="ui basic red button">-1</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="ui card">
+                  <div className="content">
+                    <i className="right floated large heartbeat icon"></i>
+                    <div className="header">Stamina</div>
+                  </div>
+                  <div className="extra content">
+                    <div className="ui two buttons">
+                      <div className="ui basic green button">+1</div>
+                      <div className="ui basic red button">-1</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="ui card">
+                  <div className="content">
+                    <i className="right floated large heartbeat icon"></i>
+                    <div className="header">Stamina</div>
+                  </div>
+                  <div className="extra content">
+                    <div className="ui two buttons">
+                      <div className="ui basic green button">+1</div>
+                      <div className="ui basic red button">-1</div>
+                    </div>
+                  </div>
+                </div>
 
 
-      <div className="content">
-        <Counter/>
-        <Counter/>
-        <Counter/>
-        <Counter/>
-        <Counter/>
-      </div>
+              </div>
+            </div>
+            <div className="ui vertical divider">
+            </div>
 
-      <div class="ui ordered steps">
-        <div class="completed step">
-          <div class="content">
-            <div class="title">Upkeep</div>
-            <div class="description">Gei el que lo lea</div>
-          </div>
-        </div>
-        <div class="completed step">
-          <div class="content">
-            <div class="title">Movement</div>
-            <div class="description">Gei el que lo lea</div>
-          </div>
-        </div>
-        <div class="completed step">
-          <div class="content">
-            <div class="title">Encounter</div>
-            <div class="description">Gei el que lo lea</div>
-          </div>
-        </div>
-        <div class="completed step">
-          <div class="content">
-            <div class="title">Other Worlds</div>
-            <div class="description">Gei el que lo lea</div>
-          </div>
-        </div>
-        <div class="active step">
-          <div class="content">
-            <div class="title">Mythos</div>
-            <div class="description">Cristian si es loca ome</div>
           </div>
         </div>
       </div>
-
+      <div className="eight wide column">
+        <p>
+          Puto.
+        </p>
+      </div>
     </div>
   )
 }

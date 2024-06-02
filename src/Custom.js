@@ -20,12 +20,13 @@ export const player = {
     curse: false,
   },
   investigatorState: {
+    money: 0,
+    clueToken: 0,
     stamina: 0,
     sanity: 0,
-    money: 0,
-    delayed: false,
     spSn: 0,
     fiWi: 0,
     loLu: 0,
+    delayed: false
   }
 }

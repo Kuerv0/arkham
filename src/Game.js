@@ -19,22 +19,60 @@ export const ArkhamHorror = {
 
   phases: {
     setup: {
+      onBegin: ( {G} ) => {
+        //Shuffle everything
+      },
+
       turn: {
         order: TurnOrder.ONCE,
-        minMoves: 1,
-        maxMoves: 1,
       },
 
       moves: {
-        // Determine Investigators
         setupInvestigator: ( { G, playerID } ) => {
+          // Determine Investigators
           G.players[playerID].investigatorSheet = G.investigatorSheets.pop()
-          // Receive Fixed Possessions
-          // Random Possessions
-          // Finish Investigator
-        }
 
+          // Receive Fixed Possessions
+
+          // Money
+          G.players[playerID].investigatorState.money = G.players[playerID].investigatorSheet.possessions.fixed.money
+
+          //Clue Tokens
+          G.players[playerID].investigatorState.clueToken = G.players[playerID].investigatorSheet.possessions.fixed.clueToken
+
+          //Investigator Cards, me falta implementar la shiet de busqueda
+          G.players[playerID].investigatorSheet.possessions.fixed.investigatorCards.forEach((items) =>
+            items.search.forEach((card) => 
+              //Search for the card
+              console.log(`Looking for ${card} in the ${items.deck} deck`)
+            )
+          )
+
+          // Darle las carajadas de deputy, blessing y demás.
+          // Mi codigo aqui
+
+          // Random Possessions
+          G.players[playerID].investigatorSheet.possessions.random.forEach((items) =>
+            Array(items.count).fill()
+            .forEach((_) => 
+              G.players[playerID].investigatorCards[items.deck].push(G.investigatorCards[items.deck].pop())
+            )
+          )
+          // Finish Investigator
+
+          // Getting Sanity
+          G.players[playerID].investigatorState.sanity = G.players[playerID].investigatorSheet.sanity
+
+          // Getting Stamina
+          G.players[playerID].investigatorState.stamina = G.players[playerID].investigatorSheet.stamina
+
+          // Randomize starting things
+          G.players[playerID].investigatorState.spSn = Math.round(Math.random() * 3)
+          G.players[playerID].investigatorState.fiWi = Math.round(Math.random() * 3)
+          G.players[playerID].investigatorState.loLu = Math.round(Math.random() * 3)
+        }
       },
+
       next: "firstMythosPhase",
       start: true,
     },

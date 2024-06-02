@@ -9,14 +9,16 @@
       "possessions": {
         "fixed": {
           "money": 1,
-          "clueTokens": 1
+          "clueToken": 1,
+          "investigatorCards": [],
+          "specialCards": []
         },
-        "random": {
-          "common": 1,
-          "unique": 1,
-          "spell": 1,
-          "skill": 3
-        }
+        "random": [
+          {"deck": "common", "count": 1},
+          {"deck": "unique", "count": 1},
+          {"deck": "spell",  "count": 1},
+          {"deck": "skill",  "count": 3}
+        ]
       },
       "focus": 3,
       "ability": {
@@ -40,14 +42,17 @@
       "possessions": {
         "fixed": {
           "money": 1,
-          "clueTokens": 3,
-          "ally": ["Duke"]
+          "clueToken": 3,
+          "investigatorCards": [
+            {"deck": "ally", "search": ["Duke"]}
+          ],
+          "specialCards": []
         },
-        "random": {
-          "common": 1,
-          "unique": 1,
-          "skill": 1
-        }
+        "random": [
+          {"deck": "common", "count": 1},
+          {"deck": "unique", "count": 1},
+          {"deck": "skill", "count": 1}
+        ]
       },
       "focus": 1,
       "ability": {
@@ -69,13 +74,16 @@
       "home": "General Store",
       "possessions": {
         "fixed": {
-          "money": 9
+          "money": 9,
+          "clueToken": 0,
+          "investigatorCards": [],
+          "specialCards": []
         },
-        "random": {
-          "common": 3,
-          "unique": 2,
-          "skill": 1
-        }
+        "random": [
+          {"deck": "common", "count": 3},
+          {"deck": "unique", "count": 2},
+          {"deck": "skill", "count": 1}
+        ]
       },
       "focus": 1,
       "ability": {
@@ -99,13 +107,15 @@
       "possessions": {
         "fixed": {
           "money": 7,
-          "clueTokens": 1
+          "clueToken": 1,
+          "investigatorCards": [],
+          "specialCards": []
         },
-        "random": {
-          "common": 2,
-          "unique": 2,
-          "skill": 1
-        }
+        "random": [
+          {"deck": "common", "count": 2},
+          {"deck": "unique", "count": 2},
+          {"deck": "skill", "count": 1}
+        ]
       },
       "focus": 2,
       "ability": {
@@ -129,14 +139,17 @@
       "possessions": {
         "fixed": {
           "money": 4,
-          "clueTokens": 1,
-          "retainer": 1
+          "clueToken": 1,
+          "investigatorCards": [],
+          "specialCards": [
+            "retainer"
+          ]
         },
-        "random": {
-          "common": 1,
-          "unique": 2,
-          "skill": 1
-        }
+        "random": [
+          {"deck": "common", "count": 1},
+          {"deck": "unique", "count": 2},
+          {"deck": "skill", "count": 1}
+        ]
       },
       "focus": 2,
       "ability": {
@@ -160,14 +173,18 @@
       "possessions": {
         "fixed": {
           "money": 5,
-          "spell": ["Shrivelling"]
+          "clueToken": 0,
+          "investigatorCards": [
+            {"deck": "spell", "search": ["Shrivelling"]}
+          ],
+          "specialCards": []
         },
-        "random": {
-          "common": 1,
-          "unique": 1,
-          "spell": 3,
-          "skill": 1
-        }
+        "random": [
+          {"deck": "common", "count": 1},
+          {"deck": "unique", "count": 1},
+          {"deck": "spell", "count": 3},
+          {"deck": "skill", "count": 1}
+        ]
       },
       "focus": 2,
       "ability": {
@@ -191,13 +208,15 @@
       "possessions": {
         "fixed": {
           "money": 7,
-          "clueTokens": 7
+          "clueToken": 7,
+          "investigatorCards": [],
+          "specialCards": []
         },
-        "random": {
-          "common": 2,
-          "spell": 2,
-          "skill": 1
-        }
+        "random": [
+          {"deck": "common", "count": 2},
+          {"deck": "spell", "count": 2},
+          {"deck": "skill", "count": 1}
+        ]
       },
       "focus": 2,
       "ability": {
@@ -221,13 +240,15 @@
       "possessions": {
         "fixed": {
           "money": 5,
-          "clueTokens": 1
+          "clueToken": 1,
+          "investigatorCards": [],
+          "specialCards": []
         },
-        "random": {
-          "unique": 2,
-          "spell": 2,
-          "skill": 1
-        }
+        "random": [
+          {"deck": "unique", "count": 2},
+          {"deck": "spell", "count": 2},
+          {"deck": "skill", "count": 1}
+        ]
       },
       "focus": 2,
       "ability": {
@@ -250,14 +271,17 @@
       "home": "Train Station",
       "possessions": {
         "fixed": {
-          "money": 10
+          "money": 10,
+          "clueToken": 0,
+          "investigatorCards": [],
+          "specialCards": []
         },
-        "random": {
-          "common": 2,
-          "unique": 1,
-          "spell": 1,
-          "skill": 1
-        }
+        "random": [
+          {"deck": "common", "count": 2},
+          {"deck": "unique", "count": 1},
+          {"deck": "spell", "count": 1},
+          {"deck": "skill", "count": 1}
+        ]
       },
       "focus": 1,
       "ability": {
@@ -282,12 +306,15 @@
         "fixed": {
           "money": 8,
           "clueToken": 3,
-          "common": [".45 Automatic"]
+          "investigatorCards": [
+            {"deck": "common", "search": [".45 Automatic"]}
+          ],
+          "specialCards": []
         },
-        "random": {
-          "common": 2,
-          "skill": 1
-        }
+        "random": [
+          {"deck": "common", "count": 2},
+          {"deck": "skill", "count": 1}
+        ]
       },
       "focus": 3,
       "ability": {
@@ -311,14 +338,16 @@
       "possessions": {
         "fixed": {
           "money": 7,
-          "clueToken": 2
+          "clueToken": 2,
+          "investigatorCards": [],
+          "specialCards": []
         },
-        "random": {
-          "common": 1,
-          "unique": 1,
-          "spell": 2,
-          "skill": 1
-        }
+        "random": [
+          {"deck": "common", "count": 1},
+          {"deck": "unique", "count": 1},
+          {"deck": "spell", "count": 2},
+          {"deck": "skill", "count": 1}
+        ]
       },
       "focus": 1,
       "ability": {
@@ -342,13 +371,15 @@
       "possessions": {
         "fixed": {
           "money": 6,
-          "clueToken": 4
+          "clueToken": 4,
+          "investigatorCards": [],
+          "specialCards": []
         },
-        "random": {
-          "common": 2,
-          "unique": 1,
-          "skill": 1
-        }
+        "random": [
+          {"deck": "common", "count": 2},
+          {"deck": "unique", "count": 1},
+          {"deck": "skill", "count": 1}
+        ]
       },
       "focus": 2,
       "ability": {
@@ -372,12 +403,16 @@
       "possessions": {
         "fixed": {
           "money": 8,
-          "common": ["Dynamite", "Tommy Gun"]
+          "clueToken": 0,
+          "investigatorCards": [
+            {"deck": "common", "search": ["Dynamite", "Tommy Gun"]}
+          ],
+          "specialCards": []
         },
-        "random": {
-          "unique": 1,
-          "skill": 1
-        }
+        "random": [
+          {"deck": "unique", "count": 1},
+          {"deck": "skill", "count": 1}
+        ]
       },
       "focus": 1,
       "ability": {
@@ -402,12 +437,15 @@
         "fixed": {
           "money": 7,
           "clueToken": 1,
-          "common": ["Bull Whip", ".38 Revolver"]
+          "investigatorCards": [
+            {"deck": "common", "search": ["Bull Whip", ".38 Revolver"]}
+          ],
+          "specialCards": []
         },
-        "random": {
-          "unique": 2,
-          "skill": 1
-        }
+        "random": [
+          {"deck": "unique", "count": 2},
+          {"deck": "skill", "count": 1}
+        ]
       },
       "focus": 2,
       "ability": {
@@ -431,14 +469,18 @@
       "possessions": {
         "fixed": {
           "money": 0,
+          "clueToken": 0,
           "blessing": 1,
-          "common": ["Cross"],
-          "unique": ["Holy Water"]
+          "investigatorCards": [
+            {"deck": "common", "search": ["Cross"]},
+            {"deck": "unique", "search": ["Holy Water"]}
+          ],
+          "specialCards": []
         },
-        "random": {
-          "spell": 2,
-          "skill": 1
-        }
+        "random": [
+          {"deck": "spell", "count": 2},
+          {"deck": "skill", "count": 1}
+        ]
       },
       "focus": 1,
       "ability": {
@@ -462,13 +504,15 @@
       "possessions": {
         "fixed": {
           "money": 9,
-          "clueToken": 1
+          "clueToken": 1,
+          "investigatorCards": [],
+          "specialCards": []
         },
-        "random": {
-          "common": 2,
-          "spell": 2,
-          "skill": 1
-        }
+        "random": [
+          {"deck": "common", "count": 2},
+          {"deck": "spell", "count": 2},
+          {"deck": "skill", "count": 1}
+        ]
       },
       "focus": 2,
       "ability": {
@@ -488,31 +532,46 @@
     "common": [
       { "name": "commonItem1" },
       { "name": "commonItem2" },
-      { "name": "commonItem3" }
+      { "name": "commonItem3" },
+      { "name": "commonItem4" },
+      { "name": "commonItem5" },
+      { "name": "commonItem6" }
     ],
 
     "unique": [
       { "name": "uniqueItem1" },
       { "name": "uniqueItem2" },
-      { "name": "uniqueItem3" }
+      { "name": "uniqueItem3" },
+      { "name": "uniqueItem4" },
+      { "name": "uniqueItem5" },
+      { "name": "uniqueItem6" }
     ],
 
     "skill": [
       { "name": "skill1" },
       { "name": "skill2" },
-      { "name": "skill3" }
+      { "name": "skill3" },
+      { "name": "skill4" },
+      { "name": "skill5" },
+      { "name": "skill6" }
     ],
 
     "spell": [
       { "name": "spell1" },
       { "name": "spell2" },
-      { "name": "spell3" }
+      { "name": "spell3" },
+      { "name": "spell4" },
+      { "name": "spell5" },
+      { "name": "spell6" }
     ],
 
     "ally": [
       { "name": "ally1" },
       { "name": "ally2" },
-      { "name": "ally3" }
+      { "name": "ally3" },
+      { "name": "ally4" },
+      { "name": "ally5" },
+      { "name": "ally6" }
     ],
 
     "special": [
@@ -525,7 +584,10 @@
   "ancientOneSheets": [
       { "name": "ancientOne1" },
       { "name": "ancientOne2" },
-      { "name": "ancientOne3" }
+      { "name": "ancientOne3" },
+      { "name": "ancientOne4" },
+      { "name": "ancientOne5" },
+      { "name": "ancientOne6" }
   ],
 
   "ancientOneCards": {
@@ -535,13 +597,19 @@
     "gate": [
       { "name": "gate1" },
       { "name": "gate2" },
-      { "name": "gate3" }
+      { "name": "gate3" },
+      { "name": "gate4" },
+      { "name": "gate5" },
+      { "name": "gate6" }
     ],
 
     "mythos": [
       { "name": "mythos1" },
       { "name": "mythos2" },
-      { "name": "mythos3" }
+      { "name": "mythos3" },
+      { "name": "mythos4" },
+      { "name": "mythos5" },
+      { "name": "mythos6" }
     ]
   }
 }
