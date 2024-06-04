@@ -1,6 +1,7 @@
 {
   "investigatorSheets": [
     {
+      "image": "./images/investigators/amanda-sharpe.png",
       "name": "Amanda Sharpe",
       "occupation": "the Student",
       "sanity": 5,
@@ -34,6 +35,7 @@
     },
 
     {
+      "image": "./images/investigators/ashcan-pete.png",
       "name": "Ashcan Pete",
       "occupation": "the Drifter",
       "sanity": 4,
@@ -67,6 +69,7 @@
     },
 
     {
+      "image": "./images/investigators/bob-jenkins.png",
       "name": "Bob Jenkins",
       "occupation": "the Salesman",
       "sanity": 4,
@@ -99,6 +102,7 @@
     },
 
     {
+      "image": "./images/investigators/carolyn-fern.png",
       "name": "Carolyn Fern",
       "occupation": "the Psychologist",
       "sanity": 6,
@@ -131,6 +135,7 @@
     },
 
     {
+      "image": "./images/investigators/darrell-simmons.png",
       "name": "Darrell Simmons",
       "occupation": "the Photographer",
       "sanity": 4,
@@ -165,6 +170,7 @@
     },
 
     {
+      "image": "./images/investigators/dexter-drake.png",
       "name": "Dexter Drake",
       "occupation": "the Magician",
       "sanity": 5,
@@ -200,6 +206,7 @@
     },
 
     {
+      "image": "./images/investigators/gloria-goldberg.png",
       "name": "Gloria Goldberg",
       "occupation": "the Author",
       "sanity": 6,
@@ -232,6 +239,7 @@
     },
 
     {
+      "image": "./images/investigators/harvey-walters.png",
       "name": "Harvey Walters",
       "occupation": "the Professor",
       "sanity": 7,
@@ -264,6 +272,7 @@
     },
 
     {
+      "image": "./images/investigators/jenny-barnes.png",
       "name": "Jenny Barnes",
       "occupation": "the Dilettante",
       "sanity": 6,
@@ -297,6 +306,7 @@
     },
 
     {
+      "image": "./images/investigators/joe-diamond.png",
       "name": "Joe Diamond",
       "occupation": "the Private Eye",
       "sanity": 4,
@@ -330,6 +340,7 @@
     },
 
     {
+      "image": "./images/investigators/kate-winthrop.png",
       "name": "Kate Winthrop",
       "occupation": "the Scientist",
       "sanity": 6,
@@ -363,6 +374,7 @@
     },
 
     {
+      "image": "./images/investigators/mandy-thompson.png",
       "name": "Mandy Thompson",
       "occupation": "the Researcher",
       "sanity": 5,
@@ -395,6 +407,7 @@
     },
 
     {
+      "image": "./images/investigators/michael-mcglen.png",
       "name": "Michael McGlen",
       "occupation": "the Gangster",
       "sanity": 3,
@@ -428,6 +441,7 @@
     },
 
     {
+      "image": "./images/investigators/monterey-jack.png",
       "name": "Monterey Jack",
       "occupation": "the Archaeologist",
       "sanity": 3,
@@ -461,6 +475,7 @@
     },
 
     {
+      "image": "./images/investigators/sister-mary.png",
       "name": "Sister Mary",
       "occupation": "the Nun",
       "sanity": 7,
@@ -496,6 +511,7 @@
     },
 
     {
+      "image": "./images/investigators/vincent-lee.png",
       "name": "Vincent Lee",
       "occupation": "the Doctor",
       "sanity": 5,
@@ -530,12 +546,784 @@
 
   "investigatorCards": {
     "common": [
-      { "name": "commonItem1" },
-      { "name": "commonItem2" },
-      { "name": "commonItem3" },
-      { "name": "commonItem4" },
-      { "name": "commonItem5" },
-      { "name": "commonItem6" }
+      {
+        "id": 1,
+        "image": "./images/common/18-derringer.png",
+        "name": ".18 Derringer",
+        "type": "Physical Weapon",
+        "bonus": [
+          {"value": 2, "check": "Combat checks"}
+        ],
+        "description": {
+          "phase": "",
+          "text": ".18 Derringer cannot be lost or stolen unless you choose to allow it."
+        },
+        "hands": 1,
+        "price": 3,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 2,
+        "image": "./images/common/18-derringer.png",
+        "name": ".18 Derringer",
+        "type": "Physical Weapon",
+        "bonus": [
+          {"value": 2, "check": "Combat checks"}
+        ],
+        "description": {
+          "phase": "",
+          "text": ".18 Derringer cannot be lost or stolen unless you choose to allow it."
+        },
+        "hands": 1,
+        "price": 3,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 3,
+        "image": "./common/38-revolver.png",
+        "name": ".38 Revoler",
+        "type": "Physical Weapon",
+        "bonus": [
+          {"value": 3, "check": "Combat checks"}
+        ],
+        "description": {
+          "phase": "",
+          "text": ""
+        },
+        "hands": 1,
+        "price": 4,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 4,
+        "image": "./common/38-revolver.png",
+        "name": ".38 Revoler",
+        "type": "Physical Weapon",
+        "bonus": [
+          {"value": 3, "check": "Combat checks"}
+        ],
+        "description": {
+          "phase": "",
+          "text": ""
+        },
+        "hands": 1,
+        "price": 4,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 5,
+        "image": "./common/45-automatic.png",
+        "name": ".45 Automatic",
+        "type": "Physical Weapon",
+        "bonus": [
+          {"value": 4, "check": "Combat checks"}
+        ],
+        "description": {
+          "phase": "",
+          "text": ""
+        },
+        "hands": 1,
+        "price": 5,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 6,
+        "image": "./common/45-automatic.png",
+        "name": ".45 Automatic",
+        "type": "Physical Weapon",
+        "bonus": [
+          {"value": 4, "check": "Combat checks"}
+        ],
+        "description": {
+          "phase": "",
+          "text": ""
+        },
+        "hands": 1,
+        "price": 5,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 7,
+        "image": "./common/ancient-tome.png",
+        "name": "Ancient Tome",
+        "type": "Tome",
+        "bonus": [
+        ],
+        "description": {
+          "phase": "Movement",
+          "text": "Exhaust and spend 2 movement points to make a Lore (-1) check. If you pass, draw 1 Spell and discard Ancient Tome. If you fail, nothing happens."
+        },
+        "hands": "",
+        "price": 4,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 8,
+        "image": "./common/ancient-tome.png",
+        "name": "Ancient Tome",
+        "type": "Tome",
+        "bonus": [
+        ],
+        "description": {
+          "phase": "Movement",
+          "text": "Exhaust and spend 2 movement points to make a Lore (-1) check. If you pass, draw 1 Spell and discard Ancient Tome. If you fail, nothing happens."
+        },
+        "hands": "",
+        "price": 4,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 9,
+        "image": "./common/axe.png",
+        "name": "Axe",
+        "type": "Physical Weapon",
+        "bonus": [
+          {"value": 2, "check": "Combat checks (+3 instead if your other hand is empty)"}
+        ],
+        "description": {
+          "phase": "",
+          "text": ""
+        },
+        "hands": 1,
+        "price": 3,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 10,
+        "image": "./common/axe.png",
+        "name": "Axe",
+        "type": "Physical Weapon",
+        "bonus": [
+          {"value": 2, "check": "Combat checks (+3 instead if your other hand is empty)"}
+        ],
+        "description": {
+          "phase": "",
+          "text": ""
+        },
+        "hands": 1,
+        "price": 3,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 11,
+        "image": "./common/bullwhip.png",
+        "name": "Bullwhip",
+        "type": "Physical Weapon",
+        "bonus": [
+          {"value": 1, "check": "Combat checks"}
+        ],
+        "description": {
+          "phase": "Any Phase",
+          "text": "Exhaust to re-roll 1 die after making a Combat check."
+        },
+        "hands": 1,
+        "price": 2,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 12,
+        "image": "./common/bullwhip.png",
+        "name": "Bullwhip",
+        "type": "Physical Weapon",
+        "bonus": [
+          {"value": 1, "check": "Combat checks"}
+        ],
+        "description": {
+          "phase": "Any Phase",
+          "text": "Exhaust to re-roll 1 die after making a Combat check."
+        },
+        "hands": 1,
+        "price": 2,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 13,
+        "image": "./common/cavalry-saber.png",
+        "name": "Cavalry Saber",
+        "type": "Physical Weapon",
+        "bonus": [
+          {"value": 2, "check": "Combat checks"}
+        ],
+        "description": {
+          "phase": "",
+          "text": ""
+        },
+        "hands": 1,
+        "price": 3,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 14,
+        "image": "./common/cavalry-saber.png",
+        "name": "Cavalry Saber",
+        "type": "Physical Weapon",
+        "bonus": [
+          {"value": 2, "check": "Combat checks"}
+        ],
+        "description": {
+          "phase": "",
+          "text": ""
+        },
+        "hands": 1,
+        "price": 3,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 15,
+        "image": "./common/cross.png",
+        "name": "Cross",
+        "type": "Magical Weapon",
+        "bonus": [
+          {"value": 0, "check": "Combat checks"},
+          {"value": 1, "check": "Horror checks"}
+        ],
+        "description": {
+          "phase": "",
+          "text": ""
+        },
+        "hands": 1,
+        "price": 3,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 16,
+        "image": "./common/cross.png",
+        "name": "Cross",
+        "type": "Magical Weapon",
+        "bonus": [
+          {"value": 0, "check": "Combat checks"},
+          {"value": 1, "check": "Horror checks"}
+        ],
+        "description": {
+          "phase": "",
+          "text": ""
+        },
+        "hands": 1,
+        "price": 3,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 17,
+        "image": "./common/dark-cloak.png",
+        "name": "Dark Cloak",
+        "type": "",
+        "bonus": [
+          {"value": 1, "check": "Evade checks"}
+        ],
+        "description": {
+          "phase": "",
+          "text": ""
+        },
+        "hands": "",
+        "price": 2,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 18,
+        "image": "./common/dark-cloak.png",
+        "name": "Dark Cloak",
+        "type": "",
+        "bonus": [
+          {"value": 1, "check": "Evade checks"}
+        ],
+        "description": {
+          "phase": "",
+          "text": ""
+        },
+        "hands": "",
+        "price": 2,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 19,
+        "image": "./common/dynamite.png",
+        "name": "Dynamite",
+        "type": "Physical Weapon",
+        "bonus": [
+          {"value": 8, "check": "Combat checks"}
+        ],
+        "description": {
+          "phase": "",
+          "text": ""
+        },
+        "hands": 2,
+        "price": 4,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 20,
+        "image": "./common/dynamite.png",
+        "name": "Dynamite",
+        "type": "Physical Weapon",
+        "bonus": [
+          {"value": 8, "check": "Combat checks"}
+        ],
+        "description": {
+          "phase": "",
+          "text": ""
+        },
+        "hands": 2,
+        "price": 4,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 21,
+        "image": "./common/food.png",
+        "name": "Food",
+        "type": "",
+        "bonus": [
+        ],
+        "description": {
+          "phase": "Any Phase",
+          "text": "Discard Food to reduce any Stamina loss by 1."
+        },
+        "hands": "",
+        "price": 1,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 22,
+        "image": "./common/food.png",
+        "name": "Food",
+        "type": "",
+        "bonus": [
+        ],
+        "description": {
+          "phase": "Any Phase",
+          "text": "Discard Food to reduce any Stamina loss by 1."
+        },
+        "hands": "",
+        "price": 1,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 23,
+        "image": "./common/knife.png",
+        "name": "Knife",
+        "type": "Physical Weapon",
+        "bonus": [
+          {"value": 1, "check": "Combat checks"}
+        ],
+        "description": {
+          "phase": "",
+          "text": ""
+        },
+        "hands": 1,
+        "price": 2,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 24,
+        "image": "./common/knife.png",
+        "name": "Knife",
+        "type": "Physical Weapon",
+        "bonus": [
+          {"value": 1, "check": "Combat checks"}
+        ],
+        "description": {
+          "phase": "",
+          "text": ""
+        },
+        "hands": 1,
+        "price": 2,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 25,
+        "image": "./common/lantern.png",
+        "name": "Lantern",
+        "type": "",
+        "bonus": [
+          {"value": 1, "check": "Luck checks"}
+        ],
+        "description": {
+          "phase": "",
+          "text": ""
+        },
+        "hands": "",
+        "price": 3,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 26,
+        "image": "./common/lantern.png",
+        "name": "Lantern",
+        "type": "",
+        "bonus": [
+          {"value": 1, "check": "Luck checks"}
+        ],
+        "description": {
+          "phase": "",
+          "text": ""
+        },
+        "hands": "",
+        "price": 3,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 27,
+        "image": "./common/lucky-cigarette-case.png",
+        "name": "Lucky Cigarette Case",
+        "type": "",
+        "bonus": [
+        ],
+        "description": {
+          "phase": "Any Phase",
+          "text": "Discard Lucky Cigarette Case to re-roll any one Skill check."
+        },
+        "hands": "",
+        "price": 1,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 28,
+        "image": "./common/lucky-cigarette-case.png",
+        "name": "Lucky Cigarette Case",
+        "type": "",
+        "bonus": [
+        ],
+        "description": {
+          "phase": "Any Phase",
+          "text": "Discard Lucky Cigarette Case to re-roll any one Skill check."
+        },
+        "hands": "",
+        "price": 1,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 29,
+        "image": "./common/map-of-arkham.png",
+        "name": "Map of Arkham",
+        "type": "",
+        "bonus": [
+        ],
+        "description": {
+          "phase": "Movement Phase",
+          "text": "Exhaust to get 1 extra movement point."
+        },
+        "hands": "",
+        "price": 2,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 30,
+        "image": "./common/map-of-arkham.png",
+        "name": "Map of Arkham",
+        "type": "",
+        "bonus": [
+        ],
+        "description": {
+          "phase": "Movement Phase",
+          "text": "Exhaust to get 1 extra movement point."
+        },
+        "hands": "",
+        "price": 2,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 31,
+        "image": "./common/motorcycle.png",
+        "name": "Motorcycle",
+        "type": "",
+        "bonus": [
+        ],
+        "description": {
+          "phase": "Movement Phase",
+          "text": "Exhaust to get 2 extra movement points."
+        },
+        "hands": "",
+        "price": 4,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 32,
+        "image": "./common/motorcycle.png",
+        "name": "Motorcycle",
+        "type": "",
+        "bonus": [
+        ],
+        "description": {
+          "phase": "Movement Phase",
+          "text": "Exhaust to get 2 extra movement points."
+        },
+        "hands": "",
+        "price": 4,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 33,
+        "image": "./common/old-journal.png",
+        "name": "Old Journal",
+        "type": "Tome",
+        "bonus": [
+        ],
+        "description": {
+          "phase": "Movement Phase",
+          "text": "Exhaust and spend 1 movement point to make a Lore (-1) check. If you pass, gain 3 Clue tokens and discard Old Journal. If you fail, nothing happens."
+        },
+        "hands": "",
+        "price": 1,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 34,
+        "image": "./common/old-journal.png",
+        "name": "Old Journal",
+        "type": "Tome",
+        "bonus": [
+        ],
+        "description": {
+          "phase": "Movement Phase",
+          "text": "Exhaust and spend 1 movement point to make a Lore (-1) check. If you pass, gain 3 Clue tokens and discard Old Journal. If you fail, nothing happens."
+        },
+        "hands": "",
+        "price": 1,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 35,
+        "image": "./common/research-materials.png",
+        "name": "Research Materials",
+        "type": "",
+        "bonus": [
+        ],
+        "description": {
+          "phase": "Any Phase",
+          "text": "Discard Research Materials instead of spending 1 Clue token."
+        },
+        "hands": "",
+        "price": 1,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 36,
+        "image": "./common/research-materials.png",
+        "name": "Research Materials",
+        "type": "",
+        "bonus": [
+        ],
+        "description": {
+          "phase": "Any Phase",
+          "text": "Discard Research Materials instead of spending 1 Clue token."
+        },
+        "hands": "",
+        "price": 1,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 37,
+        "image": "./common/rifle.png",
+        "name": "Rifle",
+        "type": "Physical Weapon",
+        "bonus": [
+          {"value": 5, "check": "Combat checks"}
+        ],
+        "description": {
+          "phase": "",
+          "text": ""
+        },
+        "hands": 2,
+        "price": 6,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 38,
+        "image": "./common/rifle.png",
+        "name": "Rifle",
+        "type": "Physical Weapon",
+        "bonus": [
+          {"value": 5, "check": "Combat checks"}
+        ],
+        "description": {
+          "phase": "",
+          "text": ""
+        },
+        "hands": 2,
+        "price": 6,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 39,
+        "image": "./common/shotgun.png",
+        "name": "Shotgun",
+        "type": "Physical Weapon",
+        "bonus": [
+          {"value": 4, "check": "Combat checks"}
+        ],
+        "description": {
+          "phase": "Any Phase",
+          "text": "When using Shotgun in Combat, all 6's rolled count as 2 successes."
+        },
+        "hands": 2,
+        "price": 6,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 40,
+        "image": "./common/shotgun.png",
+        "name": "Shotgun",
+        "type": "Physical Weapon",
+        "bonus": [
+          {"value": 4, "check": "Combat checks"}
+        ],
+        "description": {
+          "phase": "Any Phase",
+          "text": "When using Shotgun in Combat, all 6's rolled count as 2 successes."
+        },
+        "hands": 2,
+        "price": 6,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 41,
+        "image": "./common/tommy-gun.png",
+        "name": "Tommy Gun",
+        "type": "Physical Weapon",
+        "bonus": [
+          {"value": 6, "check": "Combat checks"}
+        ],
+        "description": {
+          "phase": "",
+          "text": ""
+        },
+        "hands": 2,
+        "price": 7,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 42,
+        "image": "./common/tommy-gun.png",
+        "name": "Tommy Gun",
+        "type": "Physical Weapon",
+        "bonus": [
+          {"value": 6, "check": "Combat checks"}
+        ],
+        "description": {
+          "phase": "",
+          "text": ""
+        },
+        "hands": 2,
+        "price": 7,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 43,
+        "image": "./common/whiskey.png",
+        "name": "Whiskey",
+        "type": "",
+        "bonus": [
+        ],
+        "description": {
+          "phase": "Any Phase",
+          "text": "Discard Whiskey to reduce any Sanity loss by 1."
+        },
+        "hands": "",
+        "price": 1,
+        "deck": "common",
+        "exhausted": false
+      },
+
+      {
+        "id": 44,
+        "image": "./common/whiskey.png",
+        "name": "Whiskey",
+        "type": "",
+        "bonus": [
+        ],
+        "description": {
+          "phase": "Any Phase",
+          "text": "Discard Whiskey to reduce any Sanity loss by 1."
+        },
+        "hands": "",
+        "price": 1,
+        "deck": "common",
+        "exhausted": false
+      }
+
     ],
 
     "unique": [

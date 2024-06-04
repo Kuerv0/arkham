@@ -1,6 +1,8 @@
 import { TurnOrder } from 'boardgame.io/core'
 import { customTurnOrder, player } from './Custom'
 
+import {shuffle, search} from './Utilities'
+
 import baseGame from './data/base-game.json'
 
 export const ArkhamHorror = {
@@ -20,7 +22,15 @@ export const ArkhamHorror = {
   phases: {
     setup: {
       onBegin: ( {G} ) => {
-        //Shuffle everything
+        //Shuffle investigator Sheets
+        shuffle(G.investigatorSheets)
+
+        //Shuffle investigator Cars
+        Object.entries(G.investigatorCards).forEach(([key, value]) =>
+          shuffle(G.investigatorCards[key])
+        )
+
+        // Shuffle Mythos
       },
 
       turn: {
@@ -29,7 +39,10 @@ export const ArkhamHorror = {
 
       moves: {
         setupInvestigator: ( { G, playerID } ) => {
-          // Determine Investigators
+          // If no investigators in deck, return
+          if (G.investigatorSheets <= 0){ return }
+          
+          // Determine Investigator
           G.players[playerID].investigatorSheet = G.investigatorSheets.pop()
 
           // Receive Fixed Possessions
@@ -44,7 +57,10 @@ export const ArkhamHorror = {
           G.players[playerID].investigatorSheet.possessions.fixed.investigatorCards.forEach((items) =>
             items.search.forEach((card) => 
               //Search for the card
-              console.log(`Looking for ${card} in the ${items.deck} deck`)
+              
+              //Fixed
+              search(card, G.investigatorCards[items.deck], G.players[playerID].investigatorCards[items.deck])
+              //console.log(`Looking for ${card} in the ${items.deck} deck`)
             )
           )
 
@@ -66,7 +82,7 @@ export const ArkhamHorror = {
           // Getting Stamina
           G.players[playerID].investigatorState.stamina = G.players[playerID].investigatorSheet.stamina
 
-          // Randomize starting things
+          // Randomize starting sliders
           G.players[playerID].investigatorState.spSn = Math.round(Math.random() * 3)
           G.players[playerID].investigatorState.fiWi = Math.round(Math.random() * 3)
           G.players[playerID].investigatorState.loLu = Math.round(Math.random() * 3)
