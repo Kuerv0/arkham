@@ -25,12 +25,12 @@ export const ArkhamHorror = {
         //Shuffle investigator Sheets
         shuffle(G.investigatorSheets)
 
-        //Shuffle investigator Cars
+        //Shuffle investigator Cards
         Object.entries(G.investigatorCards).forEach(([key, value]) =>
           shuffle(G.investigatorCards[key])
         )
 
-        // Shuffle Mythos
+        // Shuffle Mythos Cards
       },
 
       turn: {
@@ -45,7 +45,7 @@ export const ArkhamHorror = {
           // Determine Investigator
           G.players[playerID].investigatorSheet = G.investigatorSheets.pop()
 
-          // Receive Fixed Possessions
+          // Receive Fixed Possessions //
 
           // Money
           G.players[playerID].investigatorState.money = G.players[playerID].investigatorSheet.possessions.fixed.money
@@ -53,7 +53,7 @@ export const ArkhamHorror = {
           //Clue Tokens
           G.players[playerID].investigatorState.clueToken = G.players[playerID].investigatorSheet.possessions.fixed.clueToken
 
-          //Investigator Cards, me falta implementar la shiet de busqueda
+          //Investigator Cards
           G.players[playerID].investigatorSheet.possessions.fixed.investigatorCards.forEach((items) =>
             items.search.forEach((card) => 
               //Search for the card
