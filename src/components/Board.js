@@ -43,9 +43,6 @@ export function Board( {ctx, G, moves, playerID} ){
         <div className="column">
           <div className="ui top attached tabular menu">
             <div className="active item">Inventory</div>
-            <div className="item">Location</div>
-            <div className="item">Gate</div>
-            <div className="item">Mythos</div>
           </div>
           <div className="ui bottom attached active tab segment">
             <div className="ui link cards">

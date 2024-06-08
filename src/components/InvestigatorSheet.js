@@ -23,15 +23,18 @@ export function InvestigatorSheet(props){
             lore={props.lore}
             luck={props.luck}
           />
-        </div>
 
-        <div className="column">
           <StatusTokenList
             stamina={props.stamina}
             sanity={props.sanity}
             money={props.money}
             clueToken={props.clueToken}
           />
+
+        </div>
+
+        <div className="column">
+          <PhaseBoard/>
         </div>
 
         <div className="ui vertical divider">
@@ -136,20 +139,29 @@ function StatusTokenList(props) {
 
 function StatusToken(props) {
   return(
-    <div className="ui link cards">
-      <div className="ui centered card">
-        <div className="content">
-          <i className={props.icon}>{props.value}</i>
-          <div className="header">
-            {props.name}
-          </div>
+    <div className="ui centered card">
+      <div className="content">
+        <i className={props.icon}>{props.value}</i>
+        <div className="header">
+          {props.name}
         </div>
-        <div className="extra content">
-          <div className="ui two buttons">
-            <div className="ui basic red button">-1</div>
-            <div className="ui basic green button">+1</div>
-          </div>
+      </div>
+      <div className="extra content">
+        <div className="ui two buttons">
+          <div className="ui basic red button">-1</div>
+          <div className="ui basic green button">+1</div>
         </div>
+      </div>
+    </div>
+  )
+}
+
+function PhaseBoard(props){
+  return(
+    <div className="ui centered card">
+      <div className="content">
+        <div className="header">This is a test</div>
+        <div className="right floated meta">This is a test</div>
       </div>
     </div>
   )
