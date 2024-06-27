@@ -31,6 +31,8 @@ export const ArkhamHorror = {
         )
 
         // Shuffle Mythos Cards
+
+        // Draw Ancient One
       },
 
       turn: {
