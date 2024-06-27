@@ -39,14 +39,13 @@ export const ArkhamHorror = {
 
       moves: {
         setupInvestigator: ( { G, playerID } ) => {
-          // If no investigators in deck, return
+          // If no investigator sheet in deck, return
           if (G.investigatorSheets <= 0){ return }
           
           // Determine Investigator
           G.players[playerID].investigatorSheet = G.investigatorSheets.pop()
 
           // Receive Fixed Possessions //
-
           // Money
           G.players[playerID].investigatorState.money = G.players[playerID].investigatorSheet.possessions.fixed.money
 
@@ -58,13 +57,12 @@ export const ArkhamHorror = {
             items.search.forEach((card) => 
               //Search for the card
               
-              //Fixed
               search(card, G.investigatorCards[items.deck], G.players[playerID].investigatorCards[items.deck])
               //console.log(`Looking for ${card} in the ${items.deck} deck`)
             )
           )
 
-          // Darle las carajadas de deputy, blessing y demás.
+          // Darle las carajadas de retainer, blessing y demás.
           // Mi codigo aqui
 
           // Random Possessions
